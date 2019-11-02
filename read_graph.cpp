@@ -4,6 +4,8 @@
 using namespace std;
 
 int main() {
+	cout.precision(17);
+	
 	// Placeholder
 	string str = "";
 
@@ -27,13 +29,15 @@ int main() {
 
 	    // The third argument ',' is delimiter.  When used, getline stops reading right there
 	    getline(input, str, ',');
-	    cout << "X: " << str << endl;
+	    double latitude = atof(str.c_str());
+	    cout << "X: " << latitude << endl;
 	    input.ignore(1);
 
 	    getline(input, str);
-	    cout << "Y: " << str << endl;
+	    double longitude = atof(str.c_str());
+		cout << "Y: " << longitude << endl;
 	    cout << endl;
-	    
+
 	    i++;
 	}
 
