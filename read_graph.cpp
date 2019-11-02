@@ -5,7 +5,7 @@ using namespace std;
 
 int main() {
 	cout.precision(17);
-	
+
 	// Placeholder
 	string str = "";
 
